@@ -1,0 +1,180 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid .navbar-brand {
+    font-family: "Cedarville Cursive", serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Cardo', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: 'Cardo', sans-serif;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.about,
+.services,
+.skills,
+.education,
+.experience,
+.contact {
+    height: 100vh;
+}
+
+.services {
+    background-color: #F5F5F5;
+}
+
+.skills .col-4 {
+    width: 300px;
+    height: 150px;
+}
+
+.services .col-4 p,
+.about .container .col-3 p {
+    color: white;
+}
+
+.services .col-4 h4,
+.about .container .col-3 h4 {
+    color: white;
+}
+
+.services .col-4,
+.about .container .col-4 {
+    /* fallback */
+    background-color: #1a82f7;
+    background-image: url(images/linear_bg_1.png);
+    background-repeat: repeat-y;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, #2F2727, #1a82f7);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(left, #2F2727, #1a82f7);
+    /* IE 10 */
+    background: -ms-linear-gradient(left, #2F2727, #1a82f7);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left, #2F2727, #1a82f7);
+    width: 300px;
+    height: 250px;
+}
+
+.education .col-12 {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 50px;
+    gap: 30px;
+}
+
+.experience {
+    background-color: #2F2727;
+    color: aliceblue;
+}
+
+.contact .container .det {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #2F2727;
+    font-weight: 200;
+}
+
+.collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-family: 'Cardo', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    h2 {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-family: 'Cardo', sans-serif;
+    }
+    h4 {
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    .about {
+        height: 160vh;
+    }
+    .services,
+    .skills,
+    .education,
+    .experience,
+    .contact {
+        height: max-content;
+    }
+}
+
+@media(min-width:481px)and(max-width:1200px) {
+    h1 {
+        font-family: 'Cardo', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    h2 {
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-family: 'Cardo', sans-serif;
+    }
+    h4 {
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+    .about .container div {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(min-width:1201px) and (max-width:1600px) {}
+
+@media(min-width:1601px) {}
